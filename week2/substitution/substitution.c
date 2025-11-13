@@ -43,7 +43,6 @@ int test_input(string text){
 
 int check_duplicate(string text){
   int length = strlen(text);
-  int count = 0;
   
   for(int i = 0; i < length ; i++){
     for (int j = 0; j < length ; j++){
