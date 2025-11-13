@@ -6,12 +6,12 @@
 
 
 int colman_liau_index(double L , double S);
-int compute_index(string text);
+int compute_grade(string text);
 
 int main(void){
 
   string text = get_string("Text : ");
-  int grade = compute_index(text);
+  int grade = compute_grade(text);
 
   if(grade < 1){
     printf("Before Grade 1\n");
@@ -30,7 +30,7 @@ int colman_liau_index(double L , double S){
   return round(index);
 }
 
-int compute_index(string text){
+int compute_grade(string text){
 
   int length = strlen(text);
   int words , sentences , letters;
